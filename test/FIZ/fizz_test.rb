@@ -14,6 +14,7 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(5), 'App should return "buzz" when given 5'
     assert(FizzBuzz.new.fizz_buzz(52) == 'buzz', 'App should return "buzz" when the number has a 5 in it')
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15), 'App should return "fizz buzz" when given 15'
+    assert(FizzBuzz.new.fizz_buzz(563) == 'fizz buzz', 'App should return "fizz buzz" when the number has a 5 and a 3 in it')
   end
 
 end
