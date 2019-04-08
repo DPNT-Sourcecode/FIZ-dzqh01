@@ -3,9 +3,9 @@ class FizzBuzz
 
   def fizz_buzz(number)
 
-    final
+    final = ''
 
-    if number % 3 == 0
+    if (number % 3).zero?
       final += 'fizz'
     else
       return number
@@ -16,9 +16,10 @@ class FizzBuzz
     # final += ' fizz' if number % 3 == 0 || number.to_s.include?('3')
     # final += ' buzz' if number % 5 == 0 || number.to_s.include?('5')
     # # return number
-    final.strip!
+    final.strip
   end
 end
+
 
 
 
